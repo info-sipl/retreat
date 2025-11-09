@@ -30,11 +30,10 @@ const Footer = () => {
 
           {/* MISSION */}
           <div className="flex items-center gap-3 mt-4">
-              {/* Inline heart SVG (bigger) */}
-              <div className="w-10 h-10 rounded-full border border-zinc-300 flex items-center justify-center">
-                <i className="ri-heart-line text-zinc-700 text-lg"></i>
-              </div>
-            
+            {/* Inline heart SVG (bigger) */}
+            <div className="w-10 h-10 rounded-full border border-zinc-300 flex items-center justify-center">
+              <i className="ri-heart-line text-zinc-700 text-lg"></i>
+            </div>
 
             <span className="uppercase text-sm tracking-wide font-medium">
               Our mission is a{" "}
@@ -84,10 +83,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Featured In</h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {[
-                "/images/rollingstone.svg",
-                "/images/la-times.svg",
-                "/images/nyt.svg",
-                "/images/capterra.svg",
+                "https://d19sqpdbh9i274.cloudfront.net/images/logos/rollingstone.webp",
+                "//d19sqpdbh9i274.cloudfront.net/images/logos/latimes.webp",
+                "//d19sqpdbh9i274.cloudfront.net/images/logos/nytimes.webp",
+                "//d19sqpdbh9i274.cloudfront.net/images/logos/capterra.webp",
               ].map((src, i) => (
                 <div
                   key={i}

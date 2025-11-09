@@ -231,7 +231,7 @@ function IndexPage() {
     return (
       <Fragment>
         <div className="flex flex-col gap-4 w-full h-max">
-          <div className="w-full h-max p-4 flex flex-col gap-4.5">
+          <div className="w-full h-max p-10 flex flex-col gap-4.5">
             <h1 className="text-2xl font-semibold">Locations</h1>
             {locationsData.map((loc, idx) => (
               <div key={idx} className="flex flex-col gap-2">
@@ -249,7 +249,7 @@ function IndexPage() {
               </div>
             ))}
           </div>
-          <div className="w-full h-max p-4 flex flex-col gap-4.5">
+          <div className="w-full h-max p-10 flex flex-col gap-4.5">
             <h1 className="text-2xl font-semibold">Popular Topics</h1>
             {popularTopicsData.map((topics, idx) => (
               <div key={idx} className="flex flex-col gap-2">
