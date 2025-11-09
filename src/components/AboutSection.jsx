@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
+    <section className="w-full bg-[#F8F9FA] py-16 px-6 md:px-12 lg:px-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT - VIDEO */}
         <div className="w-full">
@@ -21,18 +21,18 @@ export default function AboutSection() {
         </div>
 
         {/* RIGHT - TEXT */}
-        <div className="flex flex-col justify-center text-gray-900">
+        <div className="flex flex-col justify-center text-[#1A3A52]">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Who is Retreat Guru?
           </h2>
 
           <p className="text-lg leading-relaxed mb-6">
-            We’re a team of 30 people who’ve been on countless retreats. Our
+            We're a team of 30 people who've been on countless retreats. Our
             experiences have been so profound that we built this site to help
             people like you find authentic, safe retreats worldwide.
           </p>
 
-          <button className="border border-black rounded-full px-6 py-3 text-base font-medium hover:bg-black hover:text-white transition-all w-fit">
+          <button className="border border-[#1A3A52] rounded-full px-6 py-3 text-base font-medium hover:bg-[#1A3A52] hover:text-[#F8F9FA] transition-all w-fit">
             LEARN MORE
           </button>
         </div>

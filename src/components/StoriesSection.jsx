@@ -224,7 +224,7 @@ const StoriesSection = () => {
   };
 
   return (
-    <section className="w-full bg-[#2B221D] py-16 px-10 text-white">
+    <section className="w-full bg-[#E8F1F8] py-16 px-10 text-[#1A3A52]">
       {/* Inline CSS to hide scrollbar cross-browser (no plugin) */}
       <style>{`
         /* Hide scrollbar for Webkit */
@@ -235,7 +235,7 @@ const StoriesSection = () => {
 
       <div className="flex justify-between items-center mb-10">
         <h2 className="text-3xl font-semibold">Stories and Inspirations</h2>
-        <button className="border border-white rounded-full px-6 py-2 font-medium hover:bg-white hover:text-black transition">
+        <button className="border border-[#1A3A52] rounded-full px-6 py-2 font-medium hover:bg-[#1A3A52] hover:text-[#F8F9FA] transition">
           READ MORE
         </button>
       </div>
@@ -266,7 +266,7 @@ const StoriesSection = () => {
               draggable={false}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-xl flex flex-col justify-end p-6">
-              <h3 className="text-lg font-semibold mb-2 leading-tight">
+              <h3 className="text-lg font-semibold mb-2 leading-tight text-white">
                 {story.title}
               </h3>
               <p className="text-sm text-gray-300">
@@ -281,9 +281,3 @@ const StoriesSection = () => {
 };
 
 export default StoriesSection;
-
-
-
-
-
-

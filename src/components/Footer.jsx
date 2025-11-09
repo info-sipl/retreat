@@ -1,17 +1,14 @@
-// src/components/Footer.jsx
-import React from "react";
-
 const Footer = () => {
   return (
-    <footer className="w-full px-8 md:px-16 lg:px-28 py-16 bg-white">
+    <footer className="w-full px-8 md:px-16 lg:px-28 py-16 bg-[#F8F9FA]">
       <div className="w-full flex flex-col md:flex-row justify-between gap-16">
         {/* LEFT SIDE */}
-        <div className="w-full md:w-1/2 flex flex-col gap-6">
+        <div className="w-full md:w-1/2 flex flex-col gap-6 text-[#1A3A52]">
           <img src="/images/logo.svg" className="w-14" alt="Logo" />
 
           <h2 className="text-xl font-semibold">Why Book with Retreat Guru?</h2>
 
-          <ul className="text-sm text-zinc-800 space-y-2">
+          <ul className="text-sm space-y-2">
             <li className="flex gap-2">
               <span className="text-xl leading-tight">•</span>
               <span>
@@ -30,23 +27,22 @@ const Footer = () => {
 
           {/* MISSION */}
           <div className="flex items-center gap-3 mt-4">
-            {/* Inline heart SVG (bigger) */}
-            <div className="w-10 h-10 rounded-full border border-zinc-300 flex items-center justify-center">
-              <i className="ri-heart-line text-zinc-700 text-lg"></i>
+            <div className="w-10 h-10 rounded-full border border-[#1A3A52]/40 flex items-center justify-center">
+              <i className="ri-heart-line text-[#1A3A52] text-lg"></i>
             </div>
 
             <span className="uppercase text-sm tracking-wide font-medium">
               Our mission is a{" "}
-              <span className="text-orange-500 font-semibold">Wakeful</span>{" "}
+              <span className="text-[#6BA3CA] font-semibold">Wakeful</span>{" "}
               World
             </span>
           </div>
 
-          {/* SOCIAL ICONS (inline svgs to avoid external icons) */}
+          {/* SOCIAL ICONS */}
           <div className="flex gap-4 pt-2">
-            <a aria-label="facebook" href="#" className="hover:opacity-80">
+            <a aria-label="facebook" href="#" className="hover:text-[#4A7C9E]">
               <svg
-                className="w-7 h-7 text-zinc-600"
+                className="w-7 h-7 text-[#1A3A52]"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -54,9 +50,9 @@ const Footer = () => {
               </svg>
             </a>
 
-            <a aria-label="instagram" href="#" className="hover:opacity-80">
+            <a aria-label="instagram" href="#" className="hover:text-[#4A7C9E]">
               <svg
-                className="w-7 h-7 text-zinc-600"
+                className="w-7 h-7 text-[#1A3A52]"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -64,9 +60,9 @@ const Footer = () => {
               </svg>
             </a>
 
-            <a aria-label="twitter" href="#" className="hover:opacity-80">
+            <a aria-label="twitter" href="#" className="hover:text-[#4A7C9E]">
               <svg
-                className="w-7 h-7 text-zinc-600"
+                className="w-7 h-7 text-[#1A3A52]"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -77,8 +73,7 @@ const Footer = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-full md:w-1/2 flex flex-col gap-10">
-          {/* FEATURED IN */}
+        <div className="w-full md:w-1/2 flex flex-col gap-10 text-[#1A3A52]">
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-semibold">Featured In</h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -90,7 +85,7 @@ const Footer = () => {
               ].map((src, i) => (
                 <div
                   key={i}
-                  className="border rounded-md px-4 py-2 flex items-center justify-center"
+                  className="border border-[#1A3A52]/30 rounded-md px-4 py-2 flex items-center justify-center bg-[#E8F1F8]"
                 >
                   <img
                     src={src}
@@ -102,37 +97,37 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* LINKS: Company / Leaders / Marketplace column */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
             <div className="flex flex-col gap-2">
-              <h4 className="font-semibold text-zinc-900">Company</h4>
-              <span className="hover:text-black cursor-pointer">About Us</span>
-              <span className="hover:text-black cursor-pointer">Careers</span>
-              <span className="hover:text-black cursor-pointer">Blog</span>
-              <span className="hover:text-black cursor-pointer">
+              <h4 className="font-semibold">Company</h4>
+              <span className="hover:text-[#4A7C9E] cursor-pointer">
+                About Us
+              </span>
+              <span className="hover:text-[#4A7C9E] cursor-pointer">
+                Careers
+              </span>
+              <span className="hover:text-[#4A7C9E] cursor-pointer">Blog</span>
+              <span className="hover:text-[#4A7C9E] cursor-pointer">
                 Help & FAQ
               </span>
             </div>
 
             <div className="flex flex-col gap-2">
-              <h4 className="font-semibold text-zinc-900">
-                For Retreat Leaders
-              </h4>
-              <span className="hover:text-black cursor-pointer">Login</span>
-              <span className="hover:text-black cursor-pointer">
+              <h4 className="font-semibold">For Retreat Leaders</h4>
+              <span className="hover:text-[#4A7C9E] cursor-pointer">Login</span>
+              <span className="hover:text-[#4A7C9E] cursor-pointer">
                 List a Retreat
               </span>
-              <span className="hover:text-black cursor-pointer">
+              <span className="hover:text-[#4A7C9E] cursor-pointer">
                 Retreat Management System
               </span>
             </div>
 
-            {/* THIS IS THE SEPARATE COLUMN FOR MARKETPLACE LINKS */}
             <div className="flex flex-col gap-2">
-              <span className="hover:text-black cursor-pointer">
+              <span className="hover:text-[#4A7C9E] cursor-pointer">
                 Marketplace Host FAQ
               </span>
-              <span className="hover:text-black cursor-pointer">
+              <span className="hover:text-[#4A7C9E] cursor-pointer">
                 Marketplace Host Policies
               </span>
             </div>
@@ -141,15 +136,15 @@ const Footer = () => {
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="w-full border-t border-zinc-300 mt-12 pt-6 flex flex-col md:flex-row justify-end items-center text-sm text-zinc-700 gap-6">
+      <div className="w-full border-t border-[#1A3A52]/30 mt-12 pt-6 flex flex-col md:flex-row justify-end items-center text-sm text-[#1A3A52] gap-6">
         <div className="flex gap-6 items-center">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm">
             Copyright © 2025 Retreat Guru. All Rights Reserved
           </span>
-          <span className="text-sm text-zinc-800 cursor-pointer hover:text-black">
+          <span className="cursor-pointer hover:text-[#6BA3CA]">
             Terms of Service
           </span>
-          <span className="text-sm text-zinc-800 cursor-pointer hover:text-black">
+          <span className="cursor-pointer hover:text-[#6BA3CA]">
             Privacy Policy
           </span>
         </div>

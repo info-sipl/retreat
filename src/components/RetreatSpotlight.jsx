@@ -116,20 +116,20 @@ const RetreatSpotlight = () => {
   };
 
   return (
-    <section className="w-full bg-gray-50 py-16 px-12 relative">
+    <section className="w-full bg-[#E8F1F8] py-16 px-12 relative">
       {/* Header with pagination top-right */}
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-semibold text-gray-900">
+        <h2 className="text-3xl font-semibold text-[#1A3A52]">
           Retreat Spotlight
         </h2>
-        <div className="flex items-center gap-3 text-gray-600">
+        <div className="flex items-center gap-3 text-[#4A7C9E]">
           <p className="font-medium">
             {currentPage} / {totalPages}
           </p>
           <button
             onClick={handlePrev}
             disabled={currentPage === 1}
-            className={`w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 ${
+            className={`w-9 h-9 flex items-center justify-center rounded-full border border-[#6BA3CA] hover:bg-[#6BA3CA] hover:text-[#F8F9FA] transition ${
               currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
@@ -138,7 +138,7 @@ const RetreatSpotlight = () => {
           <button
             onClick={handleNext}
             disabled={currentPage === totalPages}
-            className={`w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 ${
+            className={`w-9 h-9 flex items-center justify-center rounded-full border border-[#6BA3CA] hover:bg-[#6BA3CA] hover:text-[#F8F9FA] transition ${
               currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
@@ -152,7 +152,7 @@ const RetreatSpotlight = () => {
         {visibleRetreats.map((r) => (
           <div
             key={r.id}
-            className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            className="bg-[#F8F9FA] rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
           >
             <div className="relative">
               <img
@@ -160,22 +160,22 @@ const RetreatSpotlight = () => {
                 alt={r.title}
                 className="w-full h-72 object-cover"
               />
-              <span className="absolute bottom-3 left-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full">
+              <span className="absolute bottom-3 left-3 bg-[#1A3A52]/80 text-[#F8F9FA] text-xs px-3 py-1 rounded-full">
                 {r.category}
               </span>
             </div>
 
             <div className="p-5">
-              <h3 className="text-base font-semibold text-gray-900 mb-2 line-clamp-2">
+              <h3 className="text-base font-semibold text-[#1A3A52] mb-2 line-clamp-2">
                 {r.title}
               </h3>
 
-              <div className="flex items-center text-gray-600 text-sm mb-2">
+              <div className="flex items-center text-[#4A7C9E] text-sm mb-2">
                 <Calendar size={14} className="mr-2" />
                 <span>{r.date}</span>
               </div>
 
-              <div className="flex items-center text-gray-600 text-sm mb-2">
+              <div className="flex items-center text-[#4A7C9E] text-sm mb-2">
                 <MapPin size={14} className="mr-2" />
                 <span>
                   {r.host}, {r.location}
@@ -183,10 +183,10 @@ const RetreatSpotlight = () => {
               </div>
 
               <div className="flex justify-between items-center mt-4">
-                <p className="text-gray-900 font-semibold">{r.price}</p>
+                <p className="text-[#1A3A52] font-semibold">{r.price}</p>
                 <span className="flex items-center text-yellow-500">
                   <Star size={16} fill="currentColor" />
-                  <span className="text-gray-800 ml-1">{r.rating}</span>
+                  <span className="text-[#1A3A52] ml-1">{r.rating}</span>
                 </span>
               </div>
             </div>
@@ -201,7 +201,7 @@ const RetreatSpotlight = () => {
         <button
           onClick={handlePrev}
           disabled={currentPage === 1}
-          className={`absolute left-0 w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md border border-gray-200 hover:bg-gray-100 transition ${
+          className={`absolute left-0 w-10 h-10 flex items-center justify-center rounded-full bg-[#F8F9FA] shadow-md border border-[#6BA3CA] hover:bg-[#6BA3CA] hover:text-[#F8F9FA] transition ${
             currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
@@ -209,7 +209,7 @@ const RetreatSpotlight = () => {
         </button>
 
         {/* Page Indicator in Center */}
-        <p className="text-center text-gray-800 text-base font-medium">
+        <p className="text-center text-[#1A3A52] text-base font-medium">
           {currentPage} / {totalPages}
         </p>
 
@@ -217,7 +217,7 @@ const RetreatSpotlight = () => {
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          className={`absolute right-0 w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md border border-gray-200 hover:bg-gray-100 transition ${
+          className={`absolute right-0 w-10 h-10 flex items-center justify-center rounded-full bg-[#F8F9FA] shadow-md border border-[#6BA3CA] hover:bg-[#6BA3CA] hover:text-[#F8F9FA] transition ${
             currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >

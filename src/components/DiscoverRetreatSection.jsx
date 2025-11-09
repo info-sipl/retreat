@@ -35,8 +35,8 @@ const DiscoverRetreatSection = () => {
   ];
 
   return (
-    <section className="py-16 px-8 bg-white">
-      <h2 className="text-3xl font-semibold mb-10 text-gray-800">
+    <section className="py-16 px-8 bg-[#F8F9FA]">
+      <h2 className="text-3xl font-semibold mb-10 text-[#1A3A52]">
         Discover Your Retreat
       </h2>
 
@@ -52,7 +52,7 @@ const DiscoverRetreatSection = () => {
               alt={item.title}
               className="h-64 w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
             />
-            <div className="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">
+            <div className="absolute bottom-4 left-4 text-[#F8F9FA] font-semibold text-lg drop-shadow-lg">
               {item.title}
             </div>
           </div>
