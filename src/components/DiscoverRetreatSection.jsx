@@ -35,7 +35,7 @@ const DiscoverRetreatSection = () => {
   ];
 
   return (
-    <section className="py-16 px-8 bg-[#F8F9FA]">
+    <section className="py-16 px-8 bg-[#E8F1F8]">
       <h2 className="text-3xl font-semibold mb-10 text-[#1A3A52]">
         Discover Your Retreat
       </h2>

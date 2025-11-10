@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="w-full px-8 md:px-16 lg:px-28 py-16 bg-[#F8F9FA]">
+    <footer className="w-full px-8 md:px-16 lg:px-28 py-16 bg-[#000080]">
       <div className="w-full flex flex-col md:flex-row justify-between gap-16">
         {/* LEFT SIDE */}
-        <div className="w-full md:w-1/2 flex flex-col gap-6 text-[#1A3A52]">
+        <div className="w-full md:w-1/2 flex flex-col gap-6 text-white">
           <img src="/images/logo.svg" className="w-14" alt="Logo" />
 
           <h2 className="text-xl font-semibold">Why Book with Retreat Guru?</h2>
@@ -27,8 +27,8 @@ const Footer = () => {
 
           {/* MISSION */}
           <div className="flex items-center gap-3 mt-4">
-            <div className="w-10 h-10 rounded-full border border-[#1A3A52]/40 flex items-center justify-center">
-              <i className="ri-heart-line text-[#1A3A52] text-lg"></i>
+            <div className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center">
+              <i className="ri-heart-line text-white text-lg"></i>
             </div>
 
             <span className="uppercase text-sm tracking-wide font-medium">
@@ -40,9 +40,9 @@ const Footer = () => {
 
           {/* SOCIAL ICONS */}
           <div className="flex gap-4 pt-2">
-            <a aria-label="facebook" href="#" className="hover:text-[#4A7C9E]">
+            <a aria-label="facebook" href="#" className="hover:text-white">
               <svg
-                className="w-7 h-7 text-[#1A3A52]"
+                className="w-7 h-7 text-white"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -52,7 +52,7 @@ const Footer = () => {
 
             <a aria-label="instagram" href="#" className="hover:text-[#4A7C9E]">
               <svg
-                className="w-7 h-7 text-[#1A3A52]"
+                className="w-7 h-7 text-white"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -62,7 +62,7 @@ const Footer = () => {
 
             <a aria-label="twitter" href="#" className="hover:text-[#4A7C9E]">
               <svg
-                className="w-7 h-7 text-[#1A3A52]"
+                className="w-7 h-7 text-white"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-full md:w-1/2 flex flex-col gap-10 text-[#1A3A52]">
+        <div className="w-full md:w-1/2 flex flex-col gap-10 text-white">
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-semibold">Featured In</h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -136,7 +136,7 @@ const Footer = () => {
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="w-full border-t border-[#1A3A52]/30 mt-12 pt-6 flex flex-col md:flex-row justify-end items-center text-sm text-[#1A3A52] gap-6">
+      <div className="w-full border-t border-white mt-12 pt-6 flex flex-col md:flex-row justify-end items-center text-sm text-white gap-6">
         <div className="flex gap-6 items-center">
           <span className="text-sm">
             Copyright © 2025 Retreat Guru. All Rights Reserved
